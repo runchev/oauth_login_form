@@ -8,22 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var auth_service_1 = require('./services/auth.service');
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent(_auth) {
+var auth_service_1 = require('../../services/auth.service');
+var ProfileComponent = (function () {
+    function ProfileComponent(_auth) {
         this._auth = _auth;
     }
-    AppComponent = __decorate([
+    ProfileComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-app',
-            templateUrl: "app.component.html",
+            selector: 'profile',
+            templateUrl: 'profile.component.html',
             providers: [auth_service_1.Auth]
         }), 
         __metadata('design:paramtypes', [auth_service_1.Auth])
-    ], AppComponent);
-    return AppComponent;
+    ], ProfileComponent);
+    return ProfileComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProfileComponent = ProfileComponent;
+//# sourceMappingURL=profile.component.js.map
