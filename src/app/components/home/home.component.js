@@ -14,8 +14,8 @@ var HomeComponent = (function () {
     /**
      *
      */
-    function HomeComponent(_auth) {
-        this._auth = _auth;
+    function HomeComponent(auth) {
+        this.auth = auth;
     }
     HomeComponent = __decorate([
         core_1.Component({

@@ -11,7 +11,7 @@ export class HomeComponent{
     /**
      *
      */
-    constructor(private _auth:Auth) {
+    constructor(private auth:Auth) {
     }
 
 }

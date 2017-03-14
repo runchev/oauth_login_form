@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var auth_service_1 = require('./services/auth.service');
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
-    function AppComponent(_auth) {
-        this._auth = _auth;
+    function AppComponent(auth) {
+        this.auth = auth;
     }
     AppComponent = __decorate([
         core_1.Component({

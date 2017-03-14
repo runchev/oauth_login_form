@@ -11,8 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var auth_service_1 = require('../../services/auth.service');
 var ProfileComponent = (function () {
-    function ProfileComponent(_auth) {
-        this._auth = _auth;
+    function ProfileComponent(auth) {
+        this.auth = auth;
+        this.profile = JSON.parse(localStorage.getItem('profile'));
     }
     ProfileComponent = __decorate([
         core_1.Component({

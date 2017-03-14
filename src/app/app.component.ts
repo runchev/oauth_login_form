@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   providers:[Auth]
 })
 export class AppComponent  { 
-    constructor(private _auth:Auth) {
+    constructor(private auth:Auth) {
     }
 }

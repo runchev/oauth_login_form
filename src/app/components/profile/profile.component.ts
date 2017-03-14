@@ -8,6 +8,8 @@ import { Auth } from '../../services/auth.service';
     providers:[Auth]
 })
 export class ProfileComponent{
-    constructor(private _auth:Auth) {
+    profile:any; 
+    constructor(private auth:Auth) {
+        this.profile = JSON.parse(localStorage.getItem('profile'));
     }
 }
